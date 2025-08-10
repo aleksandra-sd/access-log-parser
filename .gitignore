@@ -13,6 +13,8 @@ out/
 *.iws
 *.iml
 *.ipr
+pom.
+
 
 ### Eclipse ###
 .apt_generated
