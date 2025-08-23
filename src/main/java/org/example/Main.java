@@ -3,12 +3,27 @@ package org.example;
 import javax.print.DocFlavor;
 import java.util.Scanner;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Введите текст и нажмите <Enter>: ");
-        String text = new Scanner(System.in).nextLine();
-        System.out.println("Длина текста: " + text.length());
+        //Получим первое число
+        System.out.println("Введите первое число:");
+        int number1 = new Scanner(System.in).nextInt();
+
+        //Получим второе число
+        System.out.println("Введите второе число:");
+        int number2 = new Scanner(System.in).nextInt();
+
+        //Действия над числами
+        int sum = number1 + number2;
+        int difference = number1 - number2;
+        int product = number1 * number2;
+        double quotient = number1 / number2;
+
+        //Выводим результат
+        System.out.println("Сумма чисел: " + sum);
+        System.out.println("Разность чисел: " + difference);
+        System.out.println("Произведение чисел: " + product);
+        System.out.println("Частное чисел: " + quotient);
+
     }
-    }
+}
